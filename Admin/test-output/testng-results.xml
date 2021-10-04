@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="129325" started-at="2021-10-03T18:05:13 IST" finished-at="2021-10-03T18:07:22 IST">
+    <groups>
+      <group name="sanity">
+        <method signature="StatutoryCalendarAgreementsTest.createNewAgreementTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.drucare.qa.testcases.StatutoryCalendarAgreementsTest@42d8062c]" name="createNewAgreementTest" class="com.drucare.qa.testcases.StatutoryCalendarAgreementsTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Default test" duration-ms="129325" started-at="2021-10-03T18:05:13 IST" finished-at="2021-10-03T18:07:22 IST">
+      <class name="com.drucare.qa.testcases.StatutoryCalendarAgreementsTest">
+        <test-method status="PASS" signature="ExtentReports()[pri:0, instance:com.drucare.qa.testcases.StatutoryCalendarAgreementsTest@42d8062c]" name="ExtentReports" is-config="true" duration-ms="740" started-at="2021-10-03T18:05:12 IST" finished-at="2021-10-03T18:05:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReports -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.drucare.qa.testcases.StatutoryCalendarAgreementsTest@42d8062c]" name="setUp" is-config="true" duration-ms="28269" started-at="2021-10-03T18:05:15 IST" finished-at="2021-10-03T18:05:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createNewAgreementTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.drucare.qa.testcases.StatutoryCalendarAgreementsTest@42d8062c]" name="createNewAgreementTest" duration-ms="88536" started-at="2021-10-03T18:05:43 IST" description="Creating New Agreement" data-provider="getAgreementTestData" finished-at="2021-10-03T18:07:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Agency eight]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DN9737]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[JUN]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[DEC]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Automatic Agreement]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[/home/asif-01144/NewWorkSpace/AdminModule/FileUploads/Agreement1]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Asif]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[asif@yahoo.in]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[9642902996]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[https://mail.dru.care]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[4th Cross, 26th Lane]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Banglore]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Bangaluru]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[522016]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewAgreementTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.drucare.qa.testcases.StatutoryCalendarAgreementsTest@42d8062c]" name="tearDown" is-config="true" duration-ms="10446" started-at="2021-10-03T18:07:12 IST" finished-at="2021-10-03T18:07:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewAgreementTest status=SUCCESS method=StatutoryCalendarAgreementsTest.createNewAgreementTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.drucare.qa.testcases.StatutoryCalendarAgreementsTest@42d8062c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="FlushReports()[pri:0, instance:com.drucare.qa.testcases.StatutoryCalendarAgreementsTest@42d8062c]" name="FlushReports" is-config="true" duration-ms="2139" started-at="2021-10-03T18:07:22 IST" finished-at="2021-10-03T18:07:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlushReports -->
+      </class> <!-- com.drucare.qa.testcases.StatutoryCalendarAgreementsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
