@@ -15,7 +15,9 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -27,6 +29,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.dru.qa.registration.util.Eventlisteners;
+import com.drucare.qa.ExtentReportListener.ExtentReporterNG;
 import com.drucare.qa.helpers.PageHelpers;
 import com.drucare.qa.pages.MyProfilePage;
 import com.drucare.qa.util.TestUtil;
@@ -43,7 +47,7 @@ public class TestBase {
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-	public static ExtentReports extent;
+	public static ExtentReporterNG extent;
 	public static ExtentTest test;
 	public static FileInputStream ip;
 
@@ -105,12 +109,8 @@ public class TestBase {
 			driver = new EdgeDriver();
 		}
 
-		e_driver = new EventFiringWebDriver(driver);
-		// Now create object of EventListerHandler to register it with
-		// EventFiringWebDriver
-		eventListener = new WebEventListener();
-		e_driver.register(eventListener);
-		driver = e_driver;
+		WebDriverListener listeners = new WebEventListener();
+		driver = new EventFiringDecorator<WebDriver>(listeners).decorate(driver);
 
 		// driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
